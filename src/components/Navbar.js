@@ -52,7 +52,7 @@ class Navbar extends Component {
         console.log(this.state.navBtns)
         if(this.state.navBtns.btn4 === true) {
             return  <nav className="container">
-                        <ul className="subNavAcc" onMouseLeave={() => this.setState({navBtns: {btn4: false}})}>
+                        <ul className="accDropdown" onMouseLeave={() => this.setState({navBtns: {btn4: false}})}>
                             <li><a href="#">Settings</a></li>
                             <li><a href="#">Contacts</a></li>
                             <li><a href="#">Notifications</a></li>
