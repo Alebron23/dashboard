@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+body {
+
+    background-color: #1D2121;
+    margin: 0;
+    font-family: 'Roboto',sans-serif;
+}
+
+.container {
+    display:flex;
+}
+
+.nav{
+    height: 50px;
+    width: 100%;
+    background-color:  #0D1313;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo { 
+    font-size: 1.5em;
+    padding-left: 2%;
+    color: white;
+}
+
+ .nav-items{
+    padding-left: 5%;
+}
+
+.nav-items li {
+    list-style: none;
+    display: inline;
+}
+
+.nav-items a {
+    text-decoration:none;
+    outline: none; 
+    color: #A0A0A2;
+    text-transform: uppercase;
+    padding: 15.5px;
+}
+
+.active a{
+    background-color:  #19604D;
+    color: #68DDBE;
+}
+
+.nav-account { 
+    margin-left: auto;
+    text-transform: uppercase;
+    padding-right: 2%;
+    white-space:nowrap
+}
+
+.nav-account li {
+    display: inline;
+    list-style: none;
+    color: white;
+}
+
+.small-text {
+    font-size: .7em;
+    padding: 25px 10px 25px 0;
+    
+}
+
+.nav-account a{
+    color: #68DDBE;
+}
+
+.subnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+    background-color: #202628;
+    margin: 0; 
+    padding: 0;
+}
+
+.subnav li{
+    list-style: none;
+    display: inline;
+}
+
+.subnav a {
+    text-decoration:none;
+    outline: none; 
+    color: #A0A0A2;
+    font-size: .8em;
+    margin: 0;
+    padding: 0;
+}
+
+.subNavAcc {
+    width: 20%;
+    height: 150px;
+    margin: 0 0 0 auto;
+    padding: 0;
+    background-color: #202628;
+}
+
+.subNavAcc li {
+    width: 100%;
+    list-style: none;
+    border-bottom: .5px solid #68DDBE;
+    padding: 15px 0 15px 0;
+    text-align: center;
+}
+
+.subNavAcc a {
+    text-decoration: none;
+    color: #A0A0A2;
+    font-size: .8em;
+    padding: 20px;
+}
