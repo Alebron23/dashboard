@@ -4,11 +4,12 @@ body {
 
     background-color: #1D2121;
     margin: 0;
-    font-family: 'Roboto',sans-serif;
+    
 }
 
 .container {
     display:flex;
+    font-family: 'Roboto',sans-serif;
 }
 
 .nav{
@@ -17,6 +18,7 @@ body {
     background-color:  #0D1313;
     flex-direction: row;
     align-items: center;
+    
 }
 
 .logo { 
@@ -121,26 +123,71 @@ body {
     padding: 20px;
 }
 
+.topContent {
+    align-items: center;
+    background-color:#1D2121;
+    color: white;
+    padding: 0 0 0 3%;
+    height: 75px;
+}
+
+.topContent ul {
+    margin: 0 3.5% 0 auto;
+    font-size: .8em;
+    list-style: none;
+}
+.topContent li {
+    padding: 2.5px;
+}
+
+.topContent select {
+    /* -webkit-appearance: none;  */
+    /* -moz-appearance: none;   */
+    background-color:  #1D2121;
+    border-radius: 0;  
+    color: white;
+    width: 150px;
+    padding: 3px;
+}
+
+.display{
+    margin-left: 8px;
+}
+
+.middleContent {
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 75px;
+    background: white;
+}
+.middleContent h2 {
+    margin: 0;
+    padding: 0;
+}
+.middleContent li{
+    color: orange;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.graphs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .graph {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     height: 45%;
-    width: 40%;
+    width: 45%;
     border: .5px solid white;
-    border-radius: 15px;
-    background-color: orange;
-}
-
-.one { 
+    /* border-radius: 15px; */
+    background-color: lightgreen;
     margin-top: 15px;
-    margin-left: 5%;
 }
 
-.two {
-    margin-left: auto;
-    margin-top: 15px;
-    margin-right: 5%;
-}
-
-.inside {
-    padding-left: 50%;
-    padding-top: 25%;
-}
