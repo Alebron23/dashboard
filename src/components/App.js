@@ -1,17 +1,43 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
-import Graph from './Graph';
+import ReactChart from './Graph';
 
 class App extends Component {
-
-    
-
     /**
     * Displays our app
     * @function 
     * @return {ReactElement}
     * */
     render() {
+
+        let data = [
+            {letter: 'A', frequency: .08167},
+            {letter: 'B', frequency: .01492},
+            {letter: 'C', frequency: .02782},
+            {letter: 'D', frequency: .04253},
+            {letter: 'E', frequency: .12702},
+            {letter: 'F', frequency: .02288},
+            {letter: 'G', frequency: .02015},
+            {letter: 'H', frequency: .06094},
+            {letter: 'I', frequency: .06966},
+            {letter: 'J', frequency: .00153},
+            {letter: 'K', frequency: .00772},
+            {letter: 'L', frequency: .04025},
+            {letter: 'M', frequency: .02406},
+            {letter: 'N', frequency: .06749},
+            {letter: 'O', frequency: .07507},
+            {letter: 'P', frequency: .01929},
+            {letter: 'Q', frequency: .00095},
+            {letter: 'R', frequency: .05987},
+            {letter: 'S', frequency: .06327},
+            {letter: 'T', frequency: .09056},
+            {letter: 'U', frequency: .02758},
+            {letter: 'V', frequency: .00978},
+            {letter: 'W', frequency: .02360},
+            {letter: 'X', frequency: .00150},
+            {letter: 'Y', frequency: .01974},
+            {letter: 'Z', frequency: .00074}];
+
         return(
             <div>
                 <Navbar />
@@ -48,23 +74,26 @@ class App extends Component {
 
                 <div className="container graphs">
                     <div className="graph one">
-                        <Graph type= {'bar'}/>
+                       
                     </div>
 
                     <div className="graph two">
-                        <Graph type={'line'}/>
+                        
+                        
                     </div>
                 </div>
 
                 <div className="container graphs">
                     <div className="graph one">
-                        <Graph type= {'pie'}/>
+                        
                     </div>
 
                     <div className="graph two">
-                        <Graph type={'scatter plot'}/>
+                    
                     </div>
                 </div>
+
+                <ReactChart width={800} height={500}  data={data} />
             </div>
         )
     }
