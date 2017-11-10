@@ -49,7 +49,7 @@ class Navbar extends Component {
      * @return {<div>} - div with all the account btn's 
      */
     displayAccountNav = () => {
-        console.log(this.state.navBtns)
+    
         if(this.state.navBtns.btn4 === true) {
             return  <nav className="container">
                         <ul className="accDropdown" onMouseLeave={() => this.setState({navBtns: {btn4: false}})}>

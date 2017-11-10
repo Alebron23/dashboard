@@ -42,6 +42,7 @@ body {
     color: #A0A0A2;
     text-transform: uppercase;
     padding: 15.5px;
+    font-size: .9em;
 }
 
 .active a{
@@ -63,13 +64,14 @@ body {
 }
 
 .small-text {
-    font-size: .7em;
+    font-size: .6em;
     padding: 25px 10px 25px 0;
     
 }
 
 .nav-account a{
     color: #68DDBE;
+    font-size: .9em;
 }
 
 .subnav {
@@ -128,7 +130,7 @@ body {
     background-color:#1D2121;
     color: white;
     padding: 0 0 0 3%;
-    height: 75px;
+    height: 100px;
 }
 
 .topContent ul {
