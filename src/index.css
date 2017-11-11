@@ -185,11 +185,11 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 45%;
-    width: 45%;
-    border: .5px solid white;
+    height: 100%;
+    width: 92.5%;
+    border: .3px solid #68DDBE;
     /* border-radius: 15px; */
-    background-color: lightgreen;
+    background-color: #1F2125;
     margin-top: 15px;
 }
 

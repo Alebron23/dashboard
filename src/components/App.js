@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
-import * as V from 'victory';
-import { VictoryBar, VictoryChart, VictoryAxis, VictoryTheme } from 'victory';
+import BarGraph from './graphs/BarGraph';
+import LineGraph from './graphs/LineGraph';
+
 
 class App extends Component {
 
@@ -12,13 +13,6 @@ class App extends Component {
     * */
     render() {
         
-        const data = [
-            {quarter: 1, earnings: 13000},
-            {quarter: 2, earnings: 16500},
-            {quarter: 3, earnings: 14250},
-            {quarter: 4, earnings: 19000}
-            ];
-           
         return(
             <div>
                 <Navbar />
@@ -55,43 +49,23 @@ class App extends Component {
 
                 <div className="container graphs">
                     <div className="graph one">
-                        
-                    </div>
-
-                    <div className="graph two">
-                    <VictoryChart theme={VictoryTheme.material} domainPadding={{x: [10, -10]}} colorScale={"warm"}>
-                        <VictoryAxis
-                            // tickValues specifies both the number of ticks and where
-                            // they are placed on the axis
-                            tickValues={[1, 2, 3, 4]}
-                            tickFormat={["Quarter 1", "Quarter 2", "Quarter 3", "Quarter 4"]}
-                        />
-                        <VictoryAxis
-                            dependentAxis
-                            // tickFormat specifies how ticks should be displayed
-                            tickFormat={(x) => (`$${x / 1000}k`)}
-                        /> 
-                        <VictoryBar
-                            style={{ data: { fill: "red" } }}
-                            data={data}
-                            // data accessor for x values
-                            x="quarter"
-                            // data accessor for y values
-                            y="earnings"
-                        />
-                    </VictoryChart>
+                        <BarGraph />
                     </div>
                 </div>
 
                 <div className="container graphs">
-                    <div className="graph one">
                     
-                    </div>
+                    <LineGraph />
+                    
+                </div>
 
+                <div className="container graphs">
                     <div className="graph two">
                     
                     </div>
                 </div>
+
+                
             </div>
 
             
