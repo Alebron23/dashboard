@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './Navbar';
 import BarGraph from './graphs/BarGraph';
 import LineGraph from './graphs/LineGraph';
+import DonutGraph from './graphs/DonutGraph';
 
 
 class App extends Component {
@@ -48,24 +49,22 @@ class App extends Component {
                 </section> 
 
                 <div className="container graphs">
-                    <div className="graph one">
+                    <div className="graph" style={{display: "flex", flexWrap: "wrap"}}>
+                        <LineGraph />
+                    </div> 
+                </div>
+
+                <div className="container graphs">
+                    <div className="graph">
                         <BarGraph />
                     </div>
                 </div>
 
                 <div className="container graphs">
-                    
-                    <LineGraph />
-                    
-                </div>
-
-                <div className="container graphs">
-                    <div className="graph two">
-                    
+                    <div className="graph">
+                        <DonutGraph />
                     </div>
-                </div>
-
-                
+                </div> 
             </div>
 
             
