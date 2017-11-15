@@ -174,29 +174,32 @@ body {
 
 /** Need this to make containers for graphs space equally from edges of 
 screen*/
-.graphs {
+.graph-info-container {
     justify-content: space-evenly;
 }
 
+/** Need this flex-direction to make the info and graph horizontal and not vertical  */
 .graph {
     display: flex;
     flex-direction: row;
     height: 50%;
     width: 95%;
     border: .001em solid #A0A0A2;
-    background-color: #1F2125;
     margin: 15px 0 0 0;
 }
 
-.pie {
-    display: flex;
-    flex-direction: row-reverse;
+.chartInfo {
+    background-color: #364348;
+    width: 38%;
+    height: 99.5%;
+    margin: 1px 1px 0px 1px;
 }
 
-.chartInfo {
-    background-color: red;
-    width: 75%;
-    height: 100%;
+.chart {
+    background-color: #1F2125;
+    width: 62%;
+    height: 99.5%;
+    margin: 1 1 0 1;
 }
 
 

@@ -7,11 +7,11 @@ class LineGraph extends React.Component {
   
       return (
         <div>
-          <VictoryChart width={1300}  height={800} style={{parent: {marginLeft: '5%', maxWidth: '70%'}}} >
+          <VictoryChart width={1125}  height={800} style={{parent: {marginLeft: '0%', maxWidth: '90%'}}} >
             <VictoryAxis
               style={{ 
                   axis: {stroke: "black"}, 
-                  tickLabels: {stroke: '#76787A', fontSize: '40'}
+                  tickLabels: {stroke: '#76787A', fontSize: '25'}
               }}
             />
 
@@ -22,7 +22,7 @@ class LineGraph extends React.Component {
 
               style={{ 
                   axis: {stroke: "black"}, 
-                  tickLabels: {stroke: '#76787A', fontSize: '40'}
+                  tickLabels: {stroke: '#76787A', fontSize: '25'}
               }}  
             /> 
             <VictoryLine

@@ -16,16 +16,16 @@ const BarGraph = () => {
 
     return( 
         
-            <VictoryChart width={1300}  height={800} style={{ parent: {  maxHeight: '99.5%',  maxWidth:'55%', backgroundColor: '#1F2125', marginLeft: '40%', marginTop: '1'}}}  domainPadding={120} >
+            <VictoryChart width={1300}  height={800} style={{ parent: {   marginLeft: '0%',maxWidth:'100%'}}}  domainPadding={120} >
                 
                 <VictoryAxis
                     dependentAxis
                     // tickFormat specifies how ticks should be displayed
-                    tickFormat={(x) => (`$${x / 1000}k`)}
+                    tickFormat={(x) => (`$${x / 5000}k`)}
 
                     style={{ 
                         axis: {stroke: "black"}, 
-                        tickLabels: {stroke: '#76787A', fontSize: '40'}
+                        tickLabels: {stroke: '#76787A', fontSize: '25'}
                     }}
                 /> 
 

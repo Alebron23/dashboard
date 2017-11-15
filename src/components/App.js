@@ -48,25 +48,35 @@ class App extends Component {
                     </ul>
                 </section> 
 
-                <div className="container graphs">
+                <div className="container graph-info-container">
                 
                     <div className="graph">
                         <div className='chartInfo'>
 
                         </div>
-                        <LineGraph />
+                        <div className='chart'>
+                            <LineGraph />
+                        </div>
                     </div> 
                 </div>
 
-                <div className="container graphs">
+                <div className="container graph-info-container">
                     <div className="graph">
-                        <BarGraph />
+                        <div className='chartInfo'>
+
+                        </div>
+                        <div className="chart">
+                            <BarGraph />
+                        </div>
                     </div>
                 </div>
 
-                <div className="container graphs">
+                <div className="container graph-info-container">
                     <div className="graph pie" >
-                        <div style={{ width: '50%', height: '100%', marginRight: '5%'}}>
+                        <div className='chartInfo'>
+
+                        </div>
+                        <div className="chart" >
                             <DonutGraph />
                         </div>
                     </div>
