@@ -49,7 +49,11 @@ class App extends Component {
                 </section> 
 
                 <div className="container graphs">
-                    <div className="graph" style={{display: "flex", flexWrap: "wrap"}}>
+                
+                    <div className="graph">
+                        <div className='chartInfo'>
+
+                        </div>
                         <LineGraph />
                     </div> 
                 </div>
@@ -61,10 +65,14 @@ class App extends Component {
                 </div>
 
                 <div className="container graphs">
-                    <div className="graph">
-                        <DonutGraph />
+                    <div className="graph pie" >
+                        <div style={{ width: '50%', height: '100%', marginRight: '5%'}}>
+                            <DonutGraph />
+                        </div>
                     </div>
                 </div> 
+
+                
             </div>
 
             

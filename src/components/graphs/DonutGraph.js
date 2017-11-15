@@ -6,7 +6,8 @@ class DonutChart extends Component {
     render() {
         return (
             <VictoryPie 
-          style={{ labels: { fill: "white"} }}
+          style={{ labels: { fill: "white"} } }
+          
           innerRadius={100}
           labelRadius={120}
           labels={(d) => d.y}
