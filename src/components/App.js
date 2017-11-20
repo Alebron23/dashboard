@@ -4,7 +4,6 @@ import BarGraph from './graphs/BarGraph';
 import LineGraph from './graphs/LineGraph';
 import DonutGraph from './graphs/DonutGraph';
 
-
 class App extends Component {
 
     /**
@@ -48,36 +47,271 @@ class App extends Component {
                     </ul>
                 </section> 
 
-                <div className="container graph-info-container">
+                <div className="container graphs-container">
                 
-                    <div className="graph">
-                        <div className='chartInfo'>
+                    <div className="graph-info-wrapper">
+                        <div className='graph-info'>
+                            <div className="graph-info-header">
+                                <div className="graph-info-title">Streams</div>
+                                <img src="https://usatthebiglead.files.wordpress.com/2012/03/questionmark1.jpeg" width={10} height={10} />
+                            </div>
 
+                            <div classname="table"> 
+                                <div className="table-row header background-aqua">
+                                    <div className="first-column"><div className="square-color-sign aqua"></div></div>
+                                    <div className="big-column">Filtration</div>
+                                    <div className="small-column">Spent</div>
+                                    <div className="small-column">Profit</div>
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">R&R</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Filters</div> 
+                                    <div className="small-column">$400</div> 
+                                    <div className="end">$200</div> 
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Boilers</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Overtime</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Hoses</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Tanks</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Rent</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+
+                                <div className="table-row header background-blue">
+                                    <div className="first-column"><div className="square-color-sign blue"></div></div>
+                                    <div className="big-column">Crawlers</div>
+                                    <div className="small-column">Spent</div>
+                                    <div className="small-column">Profit</div>
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Hardware</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Developers</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+                            </div>
                         </div>
-                        <div className='chart'>
+
+                        <div className='graph'>
                             <LineGraph />
                         </div>
                     </div> 
                 </div>
 
-                <div className="container graph-info-container">
-                    <div className="graph">
-                        <div className='chartInfo'>
+                <div className="container graphs-container">
+                    <div className="graph-info-wrapper">
+                        <div className='graph-info'>
+                            <div className="graph-info-header">
+                                <div className="graph-info-title">Revenue By Plan</div>
+                                <img src="https://usatthebiglead.files.wordpress.com/2012/03/questionmark1.jpeg" width={10} height={10} />
+                            </div>
 
+                            <div classname="table"> 
+                                <div className="table-row header background-aqua">
+                                    <div className="first-column"><div className="square-color-sign aqua"></div></div>
+                                    <div className="big-column">Filtration</div>
+                                    <div className="small-column">Spent</div>
+                                    <div className="small-column">Profit</div>
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Developers</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Developers</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+
+                                <div className="table-row header background-blue">
+                                    <div className="first-column"><div className="square-color-sign blue"></div></div>
+                                    <div className="big-column">Filtration</div>
+                                    <div className="small-column">Spent</div>
+                                    <div className="small-column">Profit</div>
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Developers</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+
+                                <div className="table-row header background-orange">
+                                    <div className="first-column"><div className="square-color-sign orange"></div></div>
+                                    <div className="big-column">Filtration</div>
+                                    <div className="small-column">Spent</div>
+                                    <div className="small-column">Profit</div>
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Developers</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+
+                                <div className="table-row header background-pink">
+                                    <div className="first-column"><div className="square-color-sign pink"></div></div>
+                                    <div className="big-column">Filtration</div>
+                                    <div className="small-column">Spent</div>
+                                    <div className="small-column">Profit</div>
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Developers</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+
+                                <div className="table-row header background-yellow">
+                                    <div className="first-column"><div className="square-color-sign yellow"></div></div>
+                                    <div className="big-column">Filtration</div>
+                                    <div className="small-column">Spent</div>
+                                    <div className="small-column">Profit</div>
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Developers</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+
+                                <div className="table-row header background-hot-pink">
+                                    <div className="first-column"><div className="square-color-sign hot-pink"></div></div>
+                                    <div className="big-column">Filtration</div>
+                                    <div className="small-column">Spent</div>
+                                    <div className="small-column">Profit</div>
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Developers</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+                            </div>
                         </div>
-                        <div className="chart">
+                        <div className="graph">
                             <BarGraph />
                         </div>
                     </div>
                 </div>
 
-                <div className="container graph-info-container">
-                    <div className="graph pie" >
-                        <div className='chartInfo'>
+                <div className="container graphs-container">
+                    <div className="graph-info-wrapper" >
+                        <div className='graph-info'>
+                            <div className="graph-info-header">
+                                <div className="graph-info-title">Revenue By Share</div> 
+                                <img src="https://usatthebiglead.files.wordpress.com/2012/03/questionmark1.jpeg" width={10} height={10} />
+                            </div>
 
+                            <div classname="table"> 
+                                <div className="table-row header background-aqua">
+                                    <div className="first-column"><div className="square-color-sign aqua"></div></div>
+                                    <div className="big-column">Filtration</div>
+                                    <div className="small-column">Spent</div>
+                                    <div className="small-column">Profit</div>
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Developers</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Developers</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+
+                                <div className="table-row header background-blue">
+                                    <div className="first-column"><div className="square-color-sign blue"></div></div>
+                                    <div className="big-column">Filtration</div>
+                                    <div className="small-column">Spent</div>
+                                    <div className="small-column">Profit</div>
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Developers</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+
+                                <div className="table-row header background-orange">
+                                    <div className="first-column"><div className="square-color-sign orange"></div></div>
+                                    <div className="big-column">Filtration</div>
+                                    <div className="small-column">Spent</div>
+                                    <div className="small-column">Profit</div>
+                                </div>
+
+                                <div className="table-row">
+                                    <div className="first-column space"></div>
+                                    <div className="big-column">Developers</div> 
+                                    <div className="small-column">$8</div> 
+                                    <div className="end">$420</div> 
+                                </div>
+
+                            </div>
                         </div>
-                        <div className="chart" >
+                        <div className="graph" >
                             <DonutGraph />
+                            <div></div>
                         </div>
                     </div>
                 </div> 

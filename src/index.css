@@ -174,32 +174,167 @@ body {
 
 /** Need this to make containers for graphs space equally from edges of 
 screen*/
-.graph-info-container {
+.graphs-container {
     justify-content: space-evenly;
 }
 
 /** Need this flex-direction to make the info and graph horizontal and not vertical  */
-.graph {
+.graph-info-wrapper {
     display: flex;
     flex-direction: row;
     height: 50%;
     width: 95%;
     border: .001em solid #A0A0A2;
     margin: 15px 0 0 0;
+    z-index: 100;
+    overflow: hidden;
 }
 
-.chartInfo {
+.graph-info {
     background-color: #364348;
     width: 38%;
     height: 99.5%;
-    margin: 1px 1px 0px 1px;
+    margin: 1px 0px 0px 1px;
+    /* border-right: .001em solid #A0A0A2;  */
 }
 
-.chart {
+.graph-info-header {
+    background: #68DDBE; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #68DDBE , #D5F978); /*For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #68DDBE, #D5F978);      /*For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #68DDBE, #D5F978);   /*For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, #68DDBE , #D5F978);   /*Standard syntax */ 
+    font-weight: bold;
+    width: 101%;
+    height: 5%;
+    text-transform: uppercase;
+    font-size: .7em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.graph-info-title {
+    padding: 0 3% 0 3%;
+    flex-wrap: nowrap;
+}
+
+.graph-info-header img {
+    padding-left: 15px;
+}
+
+.table-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: .4em;
+    padding-top: 5px;
+}
+
+.table-row.header {
+    margin-top: 10px;
+    padding: 3;
+    display: flex;
+    font-size: .6em;
+}
+
+.table-row.background-aqua {
+    background: #405051;
+    color: #68DDBE;
+}
+
+.table-row.background-blue {
+    background: #3C5057;
+    color: #5C8DAC;
+}
+
+.table-row.background-orange {
+    background: #504B42;
+    color: #DE8C44;
+}
+
+.table-row.background-pink {
+    background: #4A4650;
+    color: #915272;
+}
+
+.table-row.background-yellow {
+    background: #51543D;
+    color: CDB954;
+}
+
+.table-row.background-hot-pink {
+    background: #4C3A4B;
+    color: #B50F4D;
+}
+
+.aqua {
+    background: #68DDBE;
+}
+
+.blue {
+    background: #5C8DAC;
+}
+
+.orange {
+    background: #DE8C44;
+}
+
+.pink {
+    background: #915272;
+}
+
+.yellow {
+    background: #CDB954;
+}
+
+.hot-pink {
+    background: #B50F4D;
+}
+
+.square-color-sign {
+    height: 7px;
+    width: 7px;
+    padding: 0;
+}
+
+.first-column {
+    width: 5%;
+    margin-left: 5;
+    
+}
+
+.big-column {
+    width: 45%;
+    /* padding-left: 0px; */
+}
+
+.row {
+    padding-left: 15px;
+}
+
+.small-column {
+    width: 20%;
+}
+
+.end {
+    width: 21%;
+}
+
+
+
+.graph {
     background-color: #1F2125;
     width: 62%;
     height: 99.5%;
     margin: 1 1 0 1;
+    border-left: .001em solid #A0A0A2;
 }
+
+
+
 
 

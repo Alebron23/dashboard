@@ -1,5 +1,5 @@
 import React from 'react';
-import { VictoryBar, VictoryChart, VictoryAxis, VictoryTheme } from 'victory';
+import { VictoryBar, VictoryChart, VictoryAxis, VictoryTheme, VictoryAnimation } from 'victory';
 
 const BarGraph = () => {
 
@@ -16,7 +16,7 @@ const BarGraph = () => {
 
     return( 
         
-            <VictoryChart width={1300}  height={800} style={{ parent: {   marginLeft: '0%',maxWidth:'100%'}}}  domainPadding={120} >
+            <VictoryChart width={1300}  height={800} style={{ parent: { marginLeft: '2%', maxWidth:'100%'}}}  domainPadding={120} >
                 
                 <VictoryAxis
                     dependentAxis
