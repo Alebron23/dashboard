@@ -1,7 +1,7 @@
 import React, { Component} from 'react';
 
 /**
- * The navbar with all its buttons and functionality
+ * The navbar with all its buttons and functionality. Also includes the mobile dropdown
  * @class */
 class Navbar extends Component {
 
@@ -11,15 +11,18 @@ class Navbar extends Component {
 
         /**
          * @type {object} 
-         * @property {object} navBtns - # stores boolean to see if btn should 
+         * @property {object} navBtns - # stores boolean to see if btn should.
          * be highlighted or not. 
-         * @property {string} name - name of the account holder*/
+         * @property {string} name - name of the account holder.
+         * @property {boolean} dropdownAnim - should the mobile dropdown expand and animate down.
+         * @property {boolean} showProjectBtns - should buttons below Projects be displayed.
+         * @property {boolean} showSignoutBtns - should buttons below signout be displayed. */
         this.state = {
             navBtns: {
-                btn1: false,
-                btn2: false,
-                btn3: false,
-                btn4: false,
+                home: false,
+                about: false,
+                projects: false,
+                signout: false,
                 mobileIcon: false
             }, 
             name: 'Dave',
@@ -46,6 +49,7 @@ class Navbar extends Component {
                             <li><a href="#">home</a></li>
                             <li><a href="#">about</a></li>
 
+                            {/** Once the li is hovered over the dropdown expands more and the correce buttons display*/}
                             <li onMouseEnter={() => this.setState({dropdownAnim: true, showProjectBtns: true})} onMouseLeave={() => this.setState({dropdownAnim: false, showProjectBtns: false})} >
                                 <a href="#">projects</a>
                                 <ul className={this.state.showProjectBtns === true ? 'project-sub-btns' : 'no-show'}>
@@ -56,6 +60,7 @@ class Navbar extends Component {
                                 </ul>
                             </li>
 
+                            {/** Once the li is hovered over the dropdown expands more and the correce buttons display*/}
                             <li className={this.state.showProjectBtns === true ? 'move-signout-btn' : ''}
                                 onMouseEnter={() => this.setState({dropdownAnim: true, showSignoutBtns: true})} onMouseLeave={() => this.setState({dropdownAnim: false, showSignoutBtns: false})}> 
                                 <a href='#'>Signout</a> 
@@ -76,9 +81,9 @@ class Navbar extends Component {
      * @return {<div>} - Div with a <ul> with all the products 
      */
     displaySubNav = () => {
-        if(this.state.navBtns.btn3 === true){
+        if(this.state.navBtns.projects === true){
             return  <nav className="container">
-                        <ul className="subnav" onMouseLeave={() => this.setState({navBtns: {btn3: false}})}>
+                        <ul className="subnav" onMouseLeave={() => this.setState({navBtns: {projects: false}})}>
                             <li> <a href="#">Recomendation Engine</a></li>
                             <li> <a href="#">Sound Recognition</a></li>
                             <li> <a href="#">Water Filtration</a></li>
@@ -94,10 +99,9 @@ class Navbar extends Component {
      * @return {<div>} - div with all the account btn's 
      */
     displayAccountNav = () => {
-    
-        if(this.state.navBtns.btn4 === true) {
+        if(this.state.navBtns.signout === true) {
             return  <nav className="container">
-                        <ul className="accDropdown" onMouseLeave={() => this.setState({navBtns: {btn4: false}})}>
+                        <ul className="accDropdown" onMouseLeave={() => this.setState({navBtns: {signout: false}})}>
                             <li><a href="#">Settings</a></li>
                             <li><a href="#">Contacts</a></li>
                             <li><a href="#">Notifications</a></li>
@@ -107,7 +111,8 @@ class Navbar extends Component {
     }
 
     /**
-    * Displays our app
+    * Displays the navbar. The navbar is composed of two different ul because
+    * I couldn't get the li to space correctly so I had to split them up. 
     * @function 
     * @return {ReactElement}
     * */
@@ -128,27 +133,27 @@ class Navbar extends Component {
                     </div>
 
                     <ul className="nav-items">
-                        <li className={this.state.navBtns.btn1 === true ? 'active' : ''} 
-                            onMouseEnter={() => this.setState({navBtns: {btn1: true}})}
-                            onMouseLeave={() => this.setState({navBtns: {btn1: false}})}>
+                        <li className={this.state.navBtns.home === true ? 'active' : ''} 
+                            onMouseEnter={() => this.setState({navBtns: {home: true}})}
+                            onMouseLeave={() => this.setState({navBtns: {home: false}})}>
                             <a href="#">home</a>
                         </li>
                         <li 
-                            className={this.state.navBtns.btn2 === true ? 'active' : ''}
-                            onMouseEnter={() => this.setState({navBtns: {btn2: true}})}
-                            onMouseLeave={() => this.setState({navBtns: {btn2: false}})} >
+                            className={this.state.navBtns.about === true ? 'active' : ''}
+                            onMouseEnter={() => this.setState({navBtns: {about: true}})}
+                            onMouseLeave={() => this.setState({navBtns: {about: false}})} >
                             <a href="#">about</a>
                         </li>
                         <li 
-                            className={this.state.navBtns.btn3 === true ? 'active' : ''}
-                            onMouseEnter={() => this.setState({navBtns: {btn3: true}})} > 
+                            className={this.state.navBtns.projects === true ? 'active' : ''}
+                            onMouseEnter={() => this.setState({navBtns: {projects: true}})} > 
                             <a href="#">projects</a>
                         </li>
                     </ul>
 
                     <ul className='nav-account'>
-                        <li className='small-text' onMouseEnter={() => this.setState({navBtns: {btn4: false}})}>Hello {this.state.name} </li>
-                        <li onMouseEnter={() => this.setState({navBtns: {btn4: true}}) }> 
+                        <li className='small-text' onMouseEnter={() => this.setState({navBtns: {signout: false}})}>Hello {this.state.name} </li>
+                        <li onMouseEnter={() => this.setState({navBtns: {signout: true}}) }> 
                             <a href='#'>Signout</a> 
                         </li>
                     </ul>

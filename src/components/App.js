@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import BarGraph from './graphs/BarGraph';
 import LineGraph from './graphs/LineGraph';
 import DonutGraph from './graphs/DonutGraph';
+import image from './assets/questionmark.jpeg';
 
 class App extends Component {
 
@@ -20,9 +21,9 @@ class App extends Component {
                 <section className="container topContent">
                     <h1>Revenue Dashboard</h1>
                     <ul>
-                        <li className="display">Displaying: </li>
+                        <li className="topContent-dropdown">Displaying: </li>
                         <li> <select>
-                                <option>Last 7 Days</option>
+                                <option>Today</option>
                                 <option>Last Month</option>
                                 <option>Last Year</option>
                             </select>
@@ -30,6 +31,7 @@ class App extends Component {
                     </ul>
                 </section>
 
+                {/** white middle bar with data and transaction data.*/}
                 <section className="container middleContent">
                     <h4> January 15, 2018</h4>
                     <ul>
@@ -48,12 +50,12 @@ class App extends Component {
                 </section> 
 
                 <div className="container graphs-container">
-                
                     <div className="graph-info-wrapper">
                         <div className='graph-info'>
                             <div className="graph-info-header">
-                                <div className="graph-info-title">Streams</div>
-                                <img src="https://usatthebiglead.files.wordpress.com/2012/03/questionmark1.jpeg" width={10} height={10} />
+                                {/** Had to set the flex property because it was stacking the title and spacing the img awkwardly. Thats why it has small-flex*/}
+                                <div className="graph-info-title small-flex">Streams</div>
+                                <img src={image} width={10} height={10} />
                             </div>
 
                             <div className="table"> 
@@ -146,8 +148,9 @@ class App extends Component {
                     <div className="graph-info-wrapper">
                         <div className='graph-info'>
                             <div className="graph-info-header">
-                                <div className="graph-info-title">Revenue By Plan</div>
-                                <img src="https://usatthebiglead.files.wordpress.com/2012/03/questionmark1.jpeg" width={10} height={10} />
+                            {/** Had to set the flex property because it was stacking the title and spacing the img awkwardly. */}
+                                <div className="graph-info-title mid-flex">Revenue By Plan</div>
+                                <img src={image} width={10} height={10} />
                             </div>
 
                             <div className="table"> 
@@ -243,6 +246,7 @@ class App extends Component {
                                 </div>
                             </div>
                         </div>
+
                         <div className="graph">
                             <BarGraph />
                         </div>
@@ -253,8 +257,9 @@ class App extends Component {
                     <div className="graph-info-wrapper" >
                         <div className='graph-info'>
                             <div className="graph-info-header">
-                                <div className="graph-info-title">Revenue By Share</div> 
-                                <img src="https://usatthebiglead.files.wordpress.com/2012/03/questionmark1.jpeg" width={10} height={10} />
+                                {/** Had to set the flex property because it was stacking the title and spacing the img awkwardly. */}
+                                <div className="graph-info-title flex">Revenue By Share</div> 
+                                <img src={image} width={10} height={10} />
                             </div>
 
                             <div className="table"> 
@@ -309,16 +314,13 @@ class App extends Component {
 
                             </div>
                         </div>
+
                         <div className="graph" >
                             <DonutGraph />
                         </div>
                     </div>
-
-                    
                 </div> 
-            </div>
-
-            
+            </div> 
         )
     }
 }

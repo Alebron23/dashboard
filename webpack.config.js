@@ -26,6 +26,22 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use : ['style-loader', 'css-loader', 'less-loader']
+			},
+
+			{
+				test: /\.(gif|png|jpe?g|svg)$/i,
+				loaders: [
+				  'file-loader', {
+					loader: 'image-webpack-loader',
+					options: {
+					  gifsicle: {
+						interlaced: false,
+					  },
+					  optipng: {
+						optimizationLevel: 7,
+					  }
+					}
+				}]
 			}
 		]
 	},
