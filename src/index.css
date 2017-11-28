@@ -10,13 +10,16 @@ body {
     font-family: 'Roboto',sans-serif;
 }
 
-.nav{
+.content-header {
     height: 50px;
     width: 100%;
     background-color:  #0D1313;
-    flex-direction: row;
     align-items: center;
-    
+}
+
+nav {
+    margin-left: auto;
+    padding-right: 2%;
 }
 
 .logo { 
@@ -25,102 +28,142 @@ body {
     color: white;
 }
 
- .nav-items{
-    padding-left: 5%;
-}
-
-.nav-items li {
-    list-style: none;
-    display: inline;
-}
-
-.nav-items a {
-    text-decoration:none;
-    outline: none; 
-    color: #A0A0A2;
-    text-transform: uppercase;
-    padding: 15.5px;
-    font-size: .9em;
-}
-
-.active a{
-    background-color:  #19604D;
-    color: #68DDBE;
-}
-
-.nav-account { 
+.mobile-icon {
+    display: inline-block;
     margin-left: auto;
-    text-transform: uppercase;
     padding-right: 2%;
-    white-space:nowrap
+    /* padding-top:10px;
+    height: 35px; */
 }
 
-.nav-account li {
-    display: inline;
+.mobile-icon:hover {
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background: #68DDBE;
+    margin: 4px;
+}
+
+.nav-items {
+    display: none;
+}
+
+.nav-account {
+    display: none;
+}
+
+.mobile-dropdown {
+    position: absolute;
+    width: 50%;
+    height: 200px;
+    margin: 0px 0px 0 50%;
+    padding: 0;
+    background-color: #202628;
+    z-index: 1000;
+}
+
+.mobile-dropdown li {
     list-style: none;
+    width: 100%;
+    padding: 15px 0 15px 0;
+    text-align: center;
     color: white;
 }
 
-.small-text {
-    font-size: .6em;
-    padding: 25px 10px 25px 0;
-    
-}
-
-.nav-account a{
-    color: #68DDBE;
-    font-size: .9em;
-}
-
-.subnav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 45px;
-    width: 100%;
-    background-color: #202628;
-    margin: 0; 
-    padding: 0;
-    position: absolute;
-}
-
-.subnav li{
-    list-style: none;
-    display: inline;
-}
-
-.subnav a {
-    text-decoration:none;
-    outline: none; 
-    color: #A0A0A2;
-    font-size: .8em;
-    margin: 0;
-    padding: 0;
-}
-
-.accDropdown {
-    width: 20%;
-    height: 149px;
-    margin: 0 0 0 80%;
-    padding: 0;
-    background-color: #202628;
-    position: absolute;
-}
-
-.accDropdown li {
-    width: 100%;
-    list-style: none;
-    border-bottom: .5px solid #68DDBE;
-    padding: 15px 0 15px 0;
-    text-align: center;
-}
-
-.accDropdown a {
+.mobile-dropdown a {
     text-decoration: none;
     color: #A0A0A2;
-    font-size: .8em;
-    padding: 20px;
+    font-family: 'Roboto',sans-serif;
+    text-transform: uppercase;
+}
+
+.mobile-dropdown a:hover {
+    text-decoration: underline;
+    color: #68DDBE;
+}
+
+.drop-down:hover ul{
+    display: inline-block;
+    background: #202628;
+    width: 100%;
+    height: 80px;
+    list-style: none;
+    position: absolute;
+    z-index: 1001;
+    top: 95%;
+    right: 0%;
+    padding: 0;
+    text-decoration: none;
+}
+
+.project-sub-btns {
+    margin-right: 18.5%;
+    font-size: .6em;
+    /* animation-name: subbuttons;
+    animation-duration: .4s;
+    animation-fill-mode: forwards; */
+}
+
+.project-sub-btns li{
+    padding: 15px 0 0 0;   
+}
+
+.signout-sub-btns {
+    /* animation-name: subbuttons;
+    animation-duration: .4s;
+    animation-fill-mode: forwards; */
+    margin-right: 18.5%;
+    font-size: .6em;
+}
+
+.signout-sub-btns li {
+    padding: 15 0 0 0;
+    /* margin: 0; */
+}
+
+.animation {
+    animation-name: myframes;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    width: 50%;
+    height: 200px;
+    margin: 0px 0px 0 50%;
+    padding: 0;
+    background-color: #202628;
+    z-index: 1000;
+}
+
+@keyframes myframes {
+	from {
+		height: 200;
+	}
+	to {
+		height: 290;
+	}
+}
+
+@keyframes subbuttons {
+    from {
+        margin-top: -40;
+    }
+    to {
+        margin-top: 0;
+    }
+}
+
+.move-signout-btn {
+    margin-top: -10px;
+    /* animation-name: signoutbutton;
+    animation-duration: .5s;
+    animation-fill-mode: forwards; */
+    /* margin-top: 100px; */
+}
+.no-show {
+    display: none;
 }
 
 .topContent {
@@ -141,8 +184,6 @@ body {
 }
 
 .topContent select {
-    /* -webkit-appearance: none;  */
-    /* -moz-appearance: none;   */
     background-color:  #1D2121;
     border-radius: 0;  
     color: white;
@@ -161,15 +202,22 @@ body {
     height: 75px;
     background: white;
 }
+
 .middleContent h2 {
-    margin: 0;
+    margin: 0 0 0 0;
     padding: 0;
 }
+
+.middleContent h4 {
+    padding-left: 10px;
+}
+
 .middleContent li{
     color: orange;
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size: .6em;
 }
 
 /** Need this to make containers for graphs space equally from edges of 
@@ -312,7 +360,7 @@ screen*/
     /* padding-left: 0px; */
 }
 
-.row {
+.space {
     padding-left: 15px;
 }
 
@@ -324,8 +372,6 @@ screen*/
     width: 21%;
 }
 
-
-
 .graph {
     background-color: #1F2125;
     width: 62%;
@@ -334,7 +380,122 @@ screen*/
     border-left: .001em solid #A0A0A2;
 }
 
+/*  */
+    
+@media screen and (min-width: 520px) {
 
+    nav{
+        width: 100%;
+        padding-right: 2%;
+    }
+
+    .mobile-icon {
+        display: none;
+    }
+
+    .nav-items{
+        padding-left: 5%;
+        display: inline;
+    }
+
+    .nav-items li {
+        list-style: none;
+        display: inline;
+    }
+
+    .nav-items a {
+        text-decoration:none;
+        outline: none; 
+        color: #A0A0A2;
+        text-transform: uppercase;
+        padding: 15.5px;
+        font-size: .9em;
+    }
+
+    .active a{
+        background-color:  #19604D;
+        color: #68DDBE;
+    }
+
+    .nav-account { 
+        margin-left: auto;
+        text-transform: uppercase;
+        padding-right: 2%;
+        white-space:nowrap;
+        display: inline;
+    }
+
+    .nav-account li {
+        display: inline;
+        list-style: none;
+        color: white;
+    }
+
+    .small-text {
+        font-size: .6em;
+        padding: 25px 10px 25px 0;
+    }
+
+    .nav-account a{
+        color: #68DDBE;
+        font-size: .9em;
+    }
+
+    .subnav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 45px;
+        width: 100%;
+        background-color: #202628;
+        margin: 0; 
+        padding: 0;
+        position: absolute;
+    }
+
+    .subnav li{
+        list-style: none;
+        display: inline;
+    }
+
+    .subnav a {
+        text-decoration:none;
+        outline: none; 
+        color: #A0A0A2;
+        font-size: .8em;
+        margin: 0;
+        padding: 0;
+    }
+
+    .accDropdown {
+        width: 20%;
+        height: 149px;
+        margin: 0 0 0 80%;
+        padding: 0;
+        background-color: #202628;
+        position: absolute;
+    }
+
+    .accDropdown li {
+        width: 100%;
+        list-style: none;
+        border-bottom: .5px solid #68DDBE;
+        padding: 15px 0 15px 0;
+        text-align: center;
+    }
+
+    .accDropdown a {
+        text-decoration: none;
+        color: #A0A0A2;
+        font-size: .8em;
+        padding: 20px;
+    }
+
+    .middleContent li{
+        font-size: .8em;
+    }
+}
 
 
 

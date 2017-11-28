@@ -56,7 +56,7 @@ class App extends Component {
                                 <img src="https://usatthebiglead.files.wordpress.com/2012/03/questionmark1.jpeg" width={10} height={10} />
                             </div>
 
-                            <div classname="table"> 
+                            <div className="table"> 
                                 <div className="table-row header background-aqua">
                                     <div className="first-column"><div className="square-color-sign aqua"></div></div>
                                     <div className="big-column">Filtration</div>
@@ -150,7 +150,7 @@ class App extends Component {
                                 <img src="https://usatthebiglead.files.wordpress.com/2012/03/questionmark1.jpeg" width={10} height={10} />
                             </div>
 
-                            <div classname="table"> 
+                            <div className="table"> 
                                 <div className="table-row header background-aqua">
                                     <div className="first-column"><div className="square-color-sign aqua"></div></div>
                                     <div className="big-column">Filtration</div>
@@ -257,7 +257,7 @@ class App extends Component {
                                 <img src="https://usatthebiglead.files.wordpress.com/2012/03/questionmark1.jpeg" width={10} height={10} />
                             </div>
 
-                            <div classname="table"> 
+                            <div className="table"> 
                                 <div className="table-row header background-aqua">
                                     <div className="first-column"><div className="square-color-sign aqua"></div></div>
                                     <div className="big-column">Filtration</div>
@@ -311,12 +311,11 @@ class App extends Component {
                         </div>
                         <div className="graph" >
                             <DonutGraph />
-                            <div></div>
                         </div>
                     </div>
-                </div> 
 
-                
+                    
+                </div> 
             </div>
 
             
