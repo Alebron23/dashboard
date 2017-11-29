@@ -70,49 +70,49 @@ class App extends Component {
                                     <div className="first-column space"></div>
                                     <div className="big-column">R&R</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
 
                                 <div className="table-row">
                                     <div className="first-column space"></div>
                                     <div className="big-column">Filters</div> 
                                     <div className="small-column">$400</div> 
-                                    <div className="end">$200</div> 
+                                    <div className="end-column">$200</div> 
                                 </div>
 
                                 <div className="table-row">
                                     <div className="first-column space"></div>
                                     <div className="big-column">Boilers</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
 
                                 <div className="table-row">
                                     <div className="first-column space"></div>
                                     <div className="big-column">Overtime</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
 
                                 <div className="table-row">
                                     <div className="first-column space"></div>
                                     <div className="big-column">Hoses</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
 
                                 <div className="table-row">
                                     <div className="first-column space"></div>
                                     <div className="big-column">Tanks</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
 
                                 <div className="table-row">
                                     <div className="first-column space"></div>
                                     <div className="big-column">Rent</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
 
                                 <div className="table-row header background-blue">
@@ -126,14 +126,14 @@ class App extends Component {
                                     <div className="first-column space"></div>
                                     <div className="big-column">Hardware</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
 
                                 <div className="table-row">
                                     <div className="first-column space"></div>
                                     <div className="big-column">Developers</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
                             </div>
                         </div>
@@ -165,14 +165,14 @@ class App extends Component {
                                     <div className="first-column space"></div>
                                     <div className="big-column">Developers</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
 
                                 <div className="table-row">
                                     <div className="first-column space"></div>
                                     <div className="big-column">Developers</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
 
                                 <div className="table-row header background-blue">
@@ -186,7 +186,7 @@ class App extends Component {
                                     <div className="first-column space"></div>
                                     <div className="big-column">Developers</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
 
                                 <div className="table-row header background-orange">
@@ -200,7 +200,7 @@ class App extends Component {
                                     <div className="first-column space"></div>
                                     <div className="big-column">Developers</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
 
                                 <div className="table-row header background-pink">
@@ -214,7 +214,7 @@ class App extends Component {
                                     <div className="first-column space"></div>
                                     <div className="big-column">Developers</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
 
                                 <div className="table-row header background-yellow">
@@ -228,7 +228,7 @@ class App extends Component {
                                     <div className="first-column space"></div>
                                     <div className="big-column">Developers</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
 
                                 <div className="table-row header background-hot-pink">
@@ -242,7 +242,7 @@ class App extends Component {
                                     <div className="first-column space"></div>
                                     <div className="big-column">Developers</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
                             </div>
                         </div>
@@ -274,14 +274,14 @@ class App extends Component {
                                     <div className="first-column space"></div>
                                     <div className="big-column">Developers</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
 
                                 <div className="table-row">
                                     <div className="first-column space"></div>
                                     <div className="big-column">Developers</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
 
                                 <div className="table-row header background-blue">
@@ -295,7 +295,7 @@ class App extends Component {
                                     <div className="first-column space"></div>
                                     <div className="big-column">Developers</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
 
                                 <div className="table-row header background-orange">
@@ -309,7 +309,7 @@ class App extends Component {
                                     <div className="first-column space"></div>
                                     <div className="big-column">Developers</div> 
                                     <div className="small-column">$8</div> 
-                                    <div className="end">$420</div> 
+                                    <div className="end-column">$420</div> 
                                 </div>
 
                             </div>

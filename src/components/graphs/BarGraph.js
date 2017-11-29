@@ -3,6 +3,7 @@ import { VictoryBar, VictoryChart, VictoryAxis, VictoryTheme, VictoryAnimation }
 
 const BarGraph = () => {
 
+    /** Data for graph. Include fill and width to style the bars  */
     const data = [
         {quarter: 1, earnings: 13000, fill: '#5CDDA8', width: 190},
         {quarter: 2, earnings: 16500, fill: '#5EADE2', width: 190}, 
@@ -12,15 +13,13 @@ const BarGraph = () => {
         {quarter: 6, earnings: 40000, fill: '#EFC133', width: 190}
       ];
 
-      //style={{ parent: { maxWidth: "50%", fontSize: 20}, labels: {fontSize: 12} , axisLabel: {stroke: "white"}}} responsive={false}
-
     return( 
         
             <VictoryChart width={1300}  height={800} style={{ parent: { marginLeft: '2%', maxWidth:'100%'}}}  domainPadding={120} >
                 
                 <VictoryAxis
                     dependentAxis
-                    // tickFormat specifies how ticks should be displayed
+                    /** tickFormat specifies how ticks should be displayed */
                     tickFormat={(x) => (`$${x / 5000}k`)}
 
                     style={{ 
@@ -32,9 +31,9 @@ const BarGraph = () => {
                 <VictoryBar
                     padding={2}
                     data={data}
-                    // data accessor for x values
+                    /** data accessor for x values. */
                     x="quarter"
-                    // data accessor for y values
+                    /** data accessor for y values. */
                     y="earnings"
                     style={{width: '40'}}
                 />

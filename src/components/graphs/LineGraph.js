@@ -17,7 +17,7 @@ class LineGraph extends React.Component {
 
             <VictoryAxis
               dependentAxis
-              // tickFormat specifies how ticks should be displayed
+              /** tickFormat specifies how ticks should be displayed */
               tickFormat={(x) => (`$${x / 1}k`)}
 
               style={{ 
@@ -28,8 +28,8 @@ class LineGraph extends React.Component {
             <VictoryLine
               style={{
                 data: { stroke: "#5CDDA8" }
-                
               }}
+
               data={[
                 { x: 1, y: 2 },
                 { x: 2, y: 3 },
@@ -44,6 +44,7 @@ class LineGraph extends React.Component {
                 data: { stroke: "#5C8DAC" },
                 parent: { border: "1px solid white"}
               }}
+              
               data={[
                 { x: 1, y: 6 },
                 { x: 2, y: 4 },

@@ -121,7 +121,7 @@ class Navbar extends Component {
         
         return(
             <div>
-            <header className="container content-header">
+            <header className="container site-header">
                 <div className="logo">Tinge</div>
                 <nav className="container nav">  
                 
@@ -151,6 +151,8 @@ class Navbar extends Component {
                         </li>
                     </ul>
 
+                    {/** This ul is pulled to the right of the page to display the user name and signout button
+                         The account actions dropdown below the signout button. */}
                     <ul className='nav-account'>
                         <li className='small-text' onMouseEnter={() => this.setState({navBtns: {signout: false}})}>Hello {this.state.name} </li>
                         <li onMouseEnter={() => this.setState({navBtns: {signout: true}}) }> 

@@ -7,10 +7,10 @@ body {
 
 .container {
     display:flex;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-.content-header {
+.site-header {
     height: 50px;
     width: 100%;
     background-color:  #0D1313;
@@ -228,7 +228,7 @@ screen. */
 
 .graph-info-header {
     background: #68DDBE; /* For browsers that do not support gradients */
-    background: linear-gradient(to left, #68DDBE , #D5F978);   /*Standard syntax */ 
+    background: linear-gradient(to left, #68DDBE , #D5F978);  
     font-weight: bold;
     width: 101%;
     height: 5%;
@@ -243,7 +243,7 @@ screen. */
     padding: 0 3% 0 3%;
 }
 
-/** Had to set these flex properties because the graph-info-titles were being stacked*/
+/** Had to set these flex-basis properties because the graph-info-titles were being stacked. */
 .small-flex {
     flex-basis: 50px;
 }
@@ -294,12 +294,12 @@ screen. */
 
 .table-row.background-pink {
     background: #4A4650;
-    color: #915272;
+    color: #DA4E8F;
 }
 
 .table-row.background-yellow {
     background: #51543D;
-    color: CDB954;
+    color: #CDB954;
 }
 
 .table-row.background-hot-pink {
@@ -320,7 +320,7 @@ screen. */
 }
 
 .pink {
-    background: #915272;
+    background: #DA4E8F;
 }
 
 .yellow {
@@ -337,6 +337,7 @@ screen. */
     padding: 0;
 }
 
+/** spacing for columns in the table */
 .first-column {
     width: 5%;
     margin-left: 5;
@@ -348,7 +349,6 @@ screen. */
     padding-left: 15px;
 }
 
-/** Takes up more space than the other columns   */
 .big-column {
     width: 45%;
 }
@@ -357,7 +357,7 @@ screen. */
     width: 20%;
 }
 
-.end {
+.end-column {
     width: 21%;
 }
 
@@ -380,6 +380,7 @@ screen. */
         display: none;
     }
 
+    /** nav-items contains buttons to navigate the site.*/
     .nav-items{
         padding-left: 5%;
         display: inline;
@@ -404,6 +405,8 @@ screen. */
         color: #68DDBE;
     }
 
+    /** nav-account is the separate ul that pulls to the left of page 
+        with signout button and users name. */
     .nav-account { 
         margin-left: auto;
         text-transform: uppercase;
@@ -420,6 +423,8 @@ screen. */
 
     .nav-account a {
         text-decoration: none;
+        color: #68DDBE;
+        font-size: .9em;
     }
 
     .nav-account a:hover {
@@ -431,11 +436,7 @@ screen. */
         padding: 25px 10px 25px 0;
     }
 
-    .nav-account a{
-        color: #68DDBE;
-        font-size: .9em;
-    }
-
+    /** subnav is portion that drops down horizontally below the navbar when Projects is hovered over. */
     .subnav {
         display: flex;
         flex-direction: row;
@@ -463,6 +464,7 @@ screen. */
         padding: 0;
     }
 
+    /** accDropdown is portion that drops down vertically below signout. */
     .accDropdown {
         width: 20%;
         height: 149px;
