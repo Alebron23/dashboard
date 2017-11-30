@@ -1,5 +1,6 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
 
@@ -58,9 +59,15 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			title: 'WebpackAndReactConfig',
 			template: './build/index.html',
+		}),
+
+		new webpack.DefinePlugin({
+			'process.env': {
+				'NODE_ENV': JSON.stringify('production')
+			}
 		})
 	],
 
-	devtool: 'source-map'
+	devtool: 'cheap-module-source-map'
 	
 }
