@@ -8,4 +8,5 @@ This is a simple dashboard with some graphs that I built from looking at a marku
 
 # Mobile Version
 I built a small mobile dropdown for the site as well. 
+
 <img width="478" alt="screen shot 2017-11-29 at 12 52 20 am" src="https://user-images.githubusercontent.com/14829509/33497856-53f76326-d69d-11e7-9f4f-2d7581d3368c.png">
